@@ -8,9 +8,10 @@ Golang練習用
     * `export GOPATH=$HOME/{作った作業用フォルダ}/go`
     * `export PATH=$PATH:$GOPATH/bin`
     * `export PATH=$PATH:/usr/local/go/bin`
-1. $GOPATH以下にsrcディレクトリ作成
-1. depをインストール `$ brew install dep | brew upgrade dep`
-1. $GOPATH/srcに移動してこちらをクローン
+1. `$GOPATH` 以下に `src` ディレクトリ作成
+1. [dep](https://golang.github.io/dep/docs/installation.html#macos)をインストール
+    * `$ brew install dep | brew upgrade dep`
+1. `$GOPATH/src`に移動してこちらをクローン
 1. `$ dep ensure` を実行
 1. `$ go run` で `main()` が実行されます
 1. `http://localhost:1323/hello` で `Hello, World!` と表示されるはずです
