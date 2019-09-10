@@ -72,6 +72,57 @@
   version = "v2.0.5"
 
 [[projects]]
+  digest = "1:4a3c34a22e7d33bba6ff405284e9cca1ddf6679a342e80336ff0d2c3ec87a9da"
+  name = "github.com/labstack/echo"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "88a9ad73ec5303231a3b843960cefaa8fe666510"
+  version = "v4.1.10"
+
+[[projects]]
+  digest = "1:9bc108827ac1d8783dea294f1ef07732fa4ca7d6e20518c04888a85828eba4ce"
+  name = "github.com/labstack/gommon"
+  packages = [
+    "color",
+    "log",
+  ]
+  pruneopts = "UT"
+  revision = "4919956f6fb227b548f004da27c7c6b20fba499f"
+  version = "v0.3.0"
+
+[[projects]]
+  digest = "1:7c084e0e780596dd2a7e20d25803909a9a43689c153de953520dfbc0b0e51166"
+  name = "github.com/mattn/go-colorable"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "8029fb3788e5a4a9c00e415f586a6d033f5d38b3"
+  version = "v0.1.2"
+
+[[projects]]
+  digest = "1:36325ebb862e0382f2f14feef409ba9351271b89ada286ae56836c603d43b59c"
+  name = "github.com/mattn/go-isatty"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "e1f7b56ace729e4a73a29a6b4fac6cd5fcda7ab3"
+  version = "v0.0.9"
+
+[[projects]]
+  digest = "1:c468422f334a6b46a19448ad59aaffdfc0a36b08fdcc1c749a0b29b6453d7e59"
+  name = "github.com/valyala/bytebufferpool"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "e746df99fe4a3986f4d4f79e13c1e0117ce9c2f7"
+  version = "v1.0.0"
+
+[[projects]]
+  digest = "1:4d29fdc69817829d8c78473d61613d984ce59675110cee7a2f0314f332cc70a2"
+  name = "github.com/valyala/fasttemplate"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "8b5e4e491ab636663841c42ea3c5a9adebabaf36"
+  version = "v1.0.1"
+
+[[projects]]
   digest = "1:07ca513e3b295b9aeb1f0f6fbefb8102139a2764ce0f28d02040c0eb2dc276dd"
   name = "go.opencensus.io"
   packages = [
@@ -96,6 +147,17 @@
   pruneopts = "UT"
   revision = "59d1ce35d30f3c25ba762169da2a37eab6ffa041"
   version = "v0.22.1"
+
+[[projects]]
+  branch = "master"
+  digest = "1:4f89a972160301f181540c6f408dd3110a633d7ea4339806c32a2f8a89dc8bb4"
+  name = "golang.org/x/crypto"
+  packages = [
+    "acme",
+    "acme/autocert",
+  ]
+  pruneopts = "UT"
+  revision = "094676da4a83be5288d281081bba63a173ce6772"
 
 [[projects]]
   branch = "master"
@@ -276,7 +338,10 @@
   analyzer-name = "dep"
   analyzer-version = 1
   input-imports = [
+    "cloud.google.com/go/firestore",
     "firebase.google.com/go",
+    "github.com/labstack/echo",
+    "google.golang.org/api/iterator",
     "google.golang.org/api/option",
   ]
   solver-name = "gps-cdcl"
