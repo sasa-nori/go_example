@@ -1,4 +1,4 @@
-package main
+package hello
 
 import (
 	"fmt"
@@ -7,7 +7,7 @@ import (
 	"github.com/carlescere/scheduler"
 )
 
-func hello() {
+func sayHello() {
 	fmt.Println("hello, world")
 }
 

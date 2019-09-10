@@ -1,4 +1,4 @@
-package main
+package testecho
 
 import (
 	"net/http"
@@ -6,7 +6,7 @@ import (
 	"github.com/labstack/echo"
 )
 
-func testApi() {
+func Start() {
 	e := echo.New()
 	e.GET("/hello", helloWorld)
 	e.GET("/users/:name", getUserName)

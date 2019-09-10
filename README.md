@@ -13,15 +13,16 @@ Golang練習用
 1. $GOPATH/srcに移動してこちらをクローン
 1. `$ dep ensure` を実行
 1. `$ go run` で `main()` が実行されます
+1. `http://localhost:1323/hello` で `Hello, World!` と表示されるはずです
 
 # 1日目
-[hello.go](./hello.go)
+[hello.go](./hello/hello.go)
 
 # 2日目
-[firestore.go](./firestore.go)
+[firestore.go](./firestore/firestore.go)
 
-# ３日目
-[firestore.go](./firestore.go)
+# 3日目
+[firestore.go](./firestore/firestore.go)
 
-# ４日目
-[api.go](./api.go)
+# 4日目
+[testecho.go](./testecho/testecho.go)

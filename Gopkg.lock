@@ -38,6 +38,14 @@
   version = "v3.9.0"
 
 [[projects]]
+  digest = "1:5f80f31b983ad0f7dc869fe1b5107e6dd5d39227ace0336e092f8511725dd928"
+  name = "github.com/carlescere/scheduler"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "ddcf6a6be3e8bd4b480f96031d9e1f3abecf2767"
+  version = "0.1"
+
+[[projects]]
   branch = "master"
   digest = "1:b7cb6054d3dff43b38ad2e92492f220f57ae6087ee797dca298139776749ace8"
   name = "github.com/golang/groupcache"
@@ -340,6 +348,7 @@
   input-imports = [
     "cloud.google.com/go/firestore",
     "firebase.google.com/go",
+    "github.com/carlescere/scheduler",
     "github.com/labstack/echo",
     "google.golang.org/api/iterator",
     "google.golang.org/api/option",
