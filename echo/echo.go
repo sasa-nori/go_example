@@ -6,6 +6,7 @@ import (
 	"github.com/labstack/echo"
 )
 
+// RunEcho シンプルなAPI実装のお試し
 func RunEcho() {
 	e := echo.New()
 	e.GET("/hello", helloWorld)
@@ -39,6 +40,7 @@ func save(c echo.Context) error {
 	return c.String(http.StatusOK, "name:"+name+", email:"+email)
 }
 
+// User ユーザー情報
 type User struct {
 	Name  string `json:"name"`
 	Email string `json:"email"`
@@ -52,17 +54,19 @@ func saveUser(c echo.Context) error {
 	return c.JSON(http.StatusOK, u)
 }
 
+// Message リクエストの値を格納する構造体
 type Message struct {
 	Name    string `json:"name"`
 	Email   string `json:"email"`
 	Message string `json:"message"`
 }
 
+// Response レスポンスをJson形式で受け取る際の構造体
 type Response struct {
-	Name    string `json:"name"`
-	Email   string `json:"email"`
-	Message string `json:message`
-	Stusts  string `json:status`
+	Name        string `json:"name"`
+	Email       string `json:"email"`
+	Description string `json:"description"`
+	Status      string `json:"status"`
 }
 
 func sendMessage(c echo.Context) error {
@@ -73,7 +77,7 @@ func sendMessage(c echo.Context) error {
 	r := new(Response)
 	r.Name = m.Name
 	r.Email = m.Email
-	r.Message = m.Message
-	r.Stusts = "success"
+	r.Description = m.Message
+	r.Status = "success"
 	return c.JSON(http.StatusOK, r)
 }

@@ -22,6 +22,7 @@ type User struct {
 // Users はユーザー情報の配列
 type Users *[]User
 
+// RunAPI PostでFireStoreにデータ入れて全部返す
 func RunAPI() {
 	e := echo.New()
 	e.POST("/users", addUser)
