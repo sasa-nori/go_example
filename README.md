@@ -1,6 +1,7 @@
-Golang練習用
+# 練習用
 
-# 環境構築(Mac)
+## 環境構築(Mac)
+
 1. [ここから](https://golang.org/dl/)最新バージョンをダウンロード
 1. インストーラを使ってインストール
 1. 作業用に$HOME以下にディレクトリを作成し、その直下にgoディレクトリを作成
@@ -16,14 +17,22 @@ Golang練習用
 1. `$ go run` で `main()` が実行されます
 1. `http://localhost:1323/hello` で `Hello, World!` と表示されるはずです
 
-# 1日目
+## 1日目
+
 [hello.go](./hello/hello.go)
 
-# 2日目
+## 2日目
+
 [firestore.go](./firestore/firestore.go)
 
-# 3日目
+## 3日目
+
 [firestore.go](./firestore/firestore.go)
 
-# 4日目
-[testecho.go](./testecho/testecho.go)
+## 4日目
+
+[echo.go](./echo/echo.go)
+
+## 5日目
+
+[api.go](./api/api.go)

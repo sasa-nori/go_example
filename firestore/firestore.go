@@ -2,7 +2,6 @@ package firestore
 
 import (
 	"context"
-	"fmt"
 	"log"
 
 	"cloud.google.com/go/firestore"
@@ -11,20 +10,22 @@ import (
 	"google.golang.org/api/option"
 )
 
-func firebaseInit() {
+func FirebaseInit(ctx context.Context) (*firestore.Client, error) {
 	// Use a service account
-	ctx := context.Background()
 	sa := option.WithCredentialsFile("path/to/serviceAccount.json")
 	app, err := firebase.NewApp(ctx, nil, sa)
 	if err != nil {
 		log.Fatalln(err)
+		return nil, err
 	}
 
 	client, err := app.Firestore(ctx)
 	if err != nil {
 		log.Fatalln(err)
+		return nil, err
 	}
-	defer client.Close()
+
+	return client, nil
 }
 
 func dataAdd() {
@@ -109,7 +110,8 @@ func dataRead() {
 		if err != nil {
 			log.Fatalf("Failed to iterate: %v", err)
 		}
-		fmt.Println(doc.Data())
+
+		log.Println(doc.Data())
 	}
 
 	// 切断

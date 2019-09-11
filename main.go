@@ -1,7 +1,7 @@
 package main
 
-import "github.com/me/example/testecho"
+import "github.com/me/example/api"
 
 func main() {
-	testecho.Start()
+	api.RunAPI()
 }
