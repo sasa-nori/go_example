@@ -1,6 +1,13 @@
-# 練習用
+# Go練習用
 
-## 環境構築(Mac)
+## 環境構築
+
+|種別|対象の環境|
+|:--:|:--:|
+|OS| macOS Mojave |
+|Go| 1.3|
+
+### 自分でやる編
 
 1. [ここから](https://golang.org/dl/)最新バージョンをダウンロード
 1. インストーラを使ってインストール
@@ -12,31 +19,40 @@
 1. `$GOPATH` 以下に `src` ディレクトリ作成
 1. [dep](https://golang.github.io/dep/docs/installation.html#macos)をインストール
     * `$ brew install dep | brew upgrade dep`
-1. `$GOPATH/src`に移動してこちらをクローン
+1. `src` へ移動してクローン
+1. クローンしたディレクトリに移動
 1. `$ dep ensure` を実行
-1. `$ go run` で `main()` が実行されます
-1. `http://localhost:1323/hello` で `Hello, World!` と表示されるはずです
+1. `$ go run main.go` で `main()` が実行されます
+1. `Hello, World!` と表示されるはずです
 
-## 1回目
+### 自動でやってもらう編
 
-[hello.go](./hello/hello.go)
+1. これを実行 `curl -sO https://raw.githubusercontent.com/noriyuki-sasagawa/go_example/master/setup.sh | sh setuo.sh`
+    * .shファイルの中身は[こちら](./setup.sh)
+1. `Hello, World!` と表示されるはずです
 
-## 2回目
+## ブログ記事で取り扱ったファイル一覧
+
+### [【第1回】Go言語（Golang）入門～環境構築編～](https://rightcode.co.jp/blog/information-technology/golang-introduction-environment-1)
+
+* [hello.go](./hello/hello.go)
+
+### [【第2回】Go言語（Golang）入門～Firestore導入編～](https://rightcode.co.jp/blog/information-technology/golang-introduction-firestore)
+
+* [firestore.go](./firestore/firestore.go)
+
+### 3回目
 
 [firestore.go](./firestore/firestore.go)
 
-## 3回目
-
-[firestore.go](./firestore/firestore.go)
-
-## 4回目
+### 4回目
 
 [echo.go](./echo/echo.go)
 
-## 5回目
+### 5回目
 
 [api.go](./api/api.go)
 
-## 6回目
+### 6回目
 
 [twitter.go](./twitter/twitter.go)

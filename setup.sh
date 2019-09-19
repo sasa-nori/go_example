@@ -15,4 +15,4 @@ source ~/.bash_profile
 cd $GOPATH/src
 git clone git@github.com:noriyuki-sasagawa/go_example.git
 dep ensure
-go run main.go
+go run $GOPATH/src/go_example/main.go
