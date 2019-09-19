@@ -17,22 +17,26 @@
 1. `$ go run` で `main()` が実行されます
 1. `http://localhost:1323/hello` で `Hello, World!` と表示されるはずです
 
-## 1日目
+## 1回目
 
 [hello.go](./hello/hello.go)
 
-## 2日目
+## 2回目
 
 [firestore.go](./firestore/firestore.go)
 
-## 3日目
+## 3回目
 
 [firestore.go](./firestore/firestore.go)
 
-## 4日目
+## 4回目
 
 [echo.go](./echo/echo.go)
 
-## 5日目
+## 5回目
 
 [api.go](./api/api.go)
+
+## 6回目
+
+[twitter.go](./twitter/twitter.go)

@@ -7,7 +7,7 @@ import (
     "github.com/carlescere/scheduler"
 )
 
-func sayHello() {
+func SayHello() {
     fmt.Println("hello, world")
 }
 

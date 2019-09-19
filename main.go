@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/me/example/twitter"
+	"github.com/me/example/hello"
 )
 
 func main() {
-    twitter.RunSearchTweet()
+    hello.SayHello()
 }
