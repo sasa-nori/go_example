@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/me/example/hello"
+	"go_example/hello"
 )
 
 func main() {
