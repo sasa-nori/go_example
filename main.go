@@ -1,9 +1,9 @@
 package main
 
 import (
-    "github.com/me/example/echo"
+	"github.com/me/example/twitter"
 )
 
 func main() {
-    echo.RunEcho()
+    twitter.RunSearchTweet()
 }

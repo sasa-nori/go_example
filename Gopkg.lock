@@ -38,12 +38,60 @@
   version = "v3.9.0"
 
 [[projects]]
+  digest = "1:2ee1ec060a2e71d2eb24755cb3f3867c52faa9895d2287d3c3bf09b01020cf32"
+  name = "github.com/ChimeraCoder/anaconda"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "9c68684170b980d5b4c2ed08fae9b530e659904d"
+  version = "v2.0.0"
+
+[[projects]]
+  branch = "master"
+  digest = "1:088fd1efa8fcd4f85c3e3c0d135f28114115517a2b215f2e39b67146d032ea33"
+  name = "github.com/ChimeraCoder/tokenbucket"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "c5a927568de7aad8a58127d80bcd36ca4e71e454"
+
+[[projects]]
+  branch = "master"
+  digest = "1:863cb3d06b96794fd14a54579116b7e704cd8bc395e9d0404a5ad236d3e198b4"
+  name = "github.com/azr/backoff"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "53511d3c733003985b0b76f733df1f4d0095ee6a"
+
+[[projects]]
   digest = "1:5f80f31b983ad0f7dc869fe1b5107e6dd5d39227ace0336e092f8511725dd928"
   name = "github.com/carlescere/scheduler"
   packages = ["."]
   pruneopts = "UT"
   revision = "ddcf6a6be3e8bd4b480f96031d9e1f3abecf2767"
   version = "0.1"
+
+[[projects]]
+  branch = "master"
+  digest = "1:efe7dc6d12119a36c1a617b574e99ac9c5ca8fbff57eb283a60462552b7c782a"
+  name = "github.com/dustin/go-jsonpointer"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "ba0abeacc3dcca5b9b20f31509c46794edbc9965"
+
+[[projects]]
+  branch = "master"
+  digest = "1:07263fbfa1c038e890b410f730279aa7adc217180f1c2f78c6dc80b3bbe9e819"
+  name = "github.com/dustin/gojson"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "2e71ec9dd5adce3b168cd0dbde03b5cc04951c30"
+
+[[projects]]
+  branch = "master"
+  digest = "1:b5cfd8d62c46082a75974f2f5e167c272f7f7d47c7a21caf49b17a45a558a601"
+  name = "github.com/garyburd/go-oauth"
+  packages = ["oauth"]
+  pruneopts = "UT"
+  revision = "bca2e7f09a178fd36b034107a00e2323bca6a82e"
 
 [[projects]]
   branch = "master"
@@ -348,6 +396,7 @@
   input-imports = [
     "cloud.google.com/go/firestore",
     "firebase.google.com/go",
+    "github.com/ChimeraCoder/anaconda",
     "github.com/carlescere/scheduler",
     "github.com/labstack/echo",
     "google.golang.org/api/iterator",
