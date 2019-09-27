@@ -27,7 +27,7 @@
 
 ### 自動でやってもらう編
 
-1. これを実行 `curl -sO https://raw.githubusercontent.com/noriyuki-sasagawa/go_example/master/setup.sh | sh setuo.sh`
+1. これを実行 `curl -sO https://raw.githubusercontent.com/noriyuki-sasagawa/go_example/master/setup.sh | sh setup.sh`
     * .shファイルの中身は[こちら](./setup.sh)
 1. `Hello, World!` と表示されるはずです
 
