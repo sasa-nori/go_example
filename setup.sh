@@ -3,7 +3,7 @@ cd $HOME
 mkdir -p development/go/src
 brew install --HEAD goenv
 echo `# golang` >>  ~/.bash_profile
-echo export `PATH="$HOME/.goenv/bin:$PATH"` >> ~/.bash_profile
+echo `export PATH="$HOME/.goenv/bin:$PATH"` >> ~/.bash_profile
 echo eval "$(goenv init -)" >> ~/.bash_profile
 source ~/.bash_profile
 goenv install 1.13
