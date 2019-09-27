@@ -41,7 +41,7 @@
 
 * [firestore.go](./firestore/firestore.go)
 
-### 3回目
+### [【第3回】Go言語（Golang）入門～Firestoreデータ操作編～](https://rightcode.co.jp/blog/information-technology/golang-introduction-firestore-data-manipulator)
 
 [firestore.go](./firestore/firestore.go)
 
@@ -56,3 +56,7 @@
 ### 6回目
 
 [twitter.go](./twitter/twitter.go)
+
+### 7回目
+
+[search.go](./search/search.go)

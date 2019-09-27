@@ -1,6 +1,5 @@
 package twitter
 
-
 import (
     "encoding/json"
     "fmt"
@@ -19,7 +18,7 @@ func RunSearchTweet() {
 
 func serach(c echo.Context) error {
     keyword := c.FormValue("keyword")
-    api := connectTwitterApi()
+    api := ConnectTwitterApi()
     // 検索 [ライトコード]
     searchResult, _ := api.GetSearch(`"` + keyword + `"`, nil)
     
@@ -36,9 +35,9 @@ func serach(c echo.Context) error {
     return c.JSON(http.StatusOK, tweets)
 }
 
-func connectTwitterApi() *anaconda.TwitterApi {
+func ConnectTwitterApi() *anaconda.TwitterApi {
     // Json読み込み
-    raw, error := ioutil.ReadFile("path/to/twitterAccount.json")
+    raw, error := ioutil.ReadFile("./path/to/twitterAccount.json")
     if error != nil {
         fmt.Println(error.Error())
         return nil

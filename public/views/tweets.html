@@ -1,0 +1,21 @@
+<html>
+<style type="text/css">
+  .thum>* {
+    float: left;
+    margin-left: 10
+  }
+</style>
+
+<body>
+  <div class="thum">
+    {{range .}}
+    <blockquote class="twitter-tweet">
+      <p lang="ja" dir="ltr">{{.Text}}</p>&mdash; {{.User}} (@{{.ScreenName}}) <a
+        href='https://twitter.com/{{.Id}}/status/{{.TweetId}}'>{{.Date}}</a>
+    </blockquote>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    {{end}}
+  </div>
+</body>
+
+</html>
