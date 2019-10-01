@@ -1,6 +1,6 @@
 #!/bin/bash
 cd $HOME
-mkdir -p development/go/src
+mkdir -p development/go/src/github.com/$USER/
 brew install --HEAD goenv
 echo "# golang" >>  ~/.bash_profile
 echo export PATH='$HOME/.goenv/bin:$PATH' >> ~/.bash_profile
@@ -15,7 +15,7 @@ echo export PATH='$PATH:/usr/local/go/bin' >> ~/.bash_profile
 source ~/.bash_profile
 brew install dep
 brew upgrade dep
-cd $GOPATH/src
+cd $GOPATH/src/github.com/$USER/
 git clone git@github.com:noriyuki-sasagawa/go_example.git
 dep ensure
-go run $GOPATH/src/go_example/main.go
+go run $GOPATH/src/github.com/$USER/go_example/main.go
