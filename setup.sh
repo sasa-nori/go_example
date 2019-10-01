@@ -18,5 +18,7 @@ cd $GOPATH/src
 git clone git@github.com:noriyuki-sasagawa/go_example.git
 brew install dep
 brew upgrade dep
+source ~/.bash_profile
+cd $GOPATH/src/go_example/
 dep ensure
-go run $GOPATH/src/go_example/main.go
+go run main.go
