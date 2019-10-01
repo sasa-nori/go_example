@@ -1,6 +1,6 @@
 package main
 
-import "github.com/me/go_example/hello"
+import "go_example/hello"
 
 func main() {
 	hello.SayHello()

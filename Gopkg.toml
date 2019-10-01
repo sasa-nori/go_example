@@ -25,6 +25,30 @@
 #   unused-packages = true
 
 
+[[constraint]]
+  name = "cloud.google.com/go"
+  version = "0.46.3"
+
+[[constraint]]
+  name = "firebase.google.com/go"
+  version = "3.9.0"
+
+[[constraint]]
+  name = "github.com/ChimeraCoder/anaconda"
+  version = "2.0.0"
+
+[[constraint]]
+  name = "github.com/carlescere/scheduler"
+  version = "0.1.0"
+
+[[constraint]]
+  name = "github.com/labstack/echo"
+  version = "4.1.10"
+
+[[constraint]]
+  name = "google.golang.org/api"
+  version = "0.10.0"
+
 [prune]
   go-tests = true
   unused-packages = true
