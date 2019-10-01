@@ -4,3 +4,5 @@ goenv uninstall --force 1.13.0
 brew uninstall goenv
 brew uninstall dep
 rm -fr go
+cd $HOME
+vi ~/.bash_profile
