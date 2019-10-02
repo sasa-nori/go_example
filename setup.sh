@@ -16,6 +16,5 @@ echo export PATH='$PATH:/usr/local/go/bin' >> ~/.bash_profile
 source ~/.bash_profile
 cd $GOPATH/src
 git clone git@github.com:noriyuki-sasagawa/go_example.git
-source ~/.bash_profile
 cd $GOPATH/src/go_example/
 go run main.go

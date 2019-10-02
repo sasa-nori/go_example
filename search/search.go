@@ -11,7 +11,7 @@ import (
 func TwitterSearch() {
     e := echo.New()
     t := &Template{
-        templates: template.Must(template.ParseGlob("../public/views/*.html")),
+        templates: template.Must(template.ParseGlob("./public/views/*.html")),
     }
     e.Renderer = t
     e.GET("/hello", Hello)
