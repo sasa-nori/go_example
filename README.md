@@ -17,12 +17,9 @@
     * `export PATH=$PATH:$GOPATH/bin`
     * `export PATH=$PATH:/usr/local/go/bin`
 1. `$GOPATH` 以下に `src` ディレクトリ作成
-1. [dep](https://golang.github.io/dep/docs/installation.html#macos)をインストール
-    * `$ brew install dep | brew upgrade dep`
 1. `src` へ移動してクローン
 1. クローンしたディレクトリに移動
-1. `$ dep ensure` を実行
-1. `$ go run main.go` で `main()` が実行されます
+1. `go run main.go` で `main() {}` が実行されます
 1. `Hello, World!` と表示されるはずです
 
 ### 自動でやってもらう編
@@ -60,3 +57,11 @@
 ### 7回目
 
 [search.go](./search/search.go)
+
+### 8回目
+
+[setup.sh](./setup.sh)
+
+### 9回目
+
+[objectbox.go](./ob/objectbox.go)
