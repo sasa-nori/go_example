@@ -16,9 +16,6 @@ echo export PATH='$PATH:/usr/local/go/bin' >> ~/.bash_profile
 source ~/.bash_profile
 cd $GOPATH/src
 git clone git@github.com:noriyuki-sasagawa/go_example.git
-brew install dep
-brew upgrade dep
 source ~/.bash_profile
 cd $GOPATH/src/go_example/
-dep ensure
 go run main.go
