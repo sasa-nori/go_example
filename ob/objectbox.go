@@ -7,6 +7,7 @@ import (
 
     "github.com/objectbox/objectbox-go/objectbox"
 )
+
 func initObjectBox() *objectbox.ObjectBox {
     objectBox, _ := objectbox.NewBuilder().Model(model.ObjectBoxModel()).Build()
     return objectBox

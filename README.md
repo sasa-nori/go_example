@@ -65,3 +65,7 @@
 ### 9回目
 
 [objectbox.go](./ob/objectbox.go)
+
+### 10回目
+
+[api.go](./ob/api.go)
