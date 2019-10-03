@@ -42,7 +42,7 @@
 
 [firestore.go](./firestore/firestore.go)
 
-### 4回目
+### [【第4回】Go言語（Golang）入門～REST API環境構築編～](https://rightcode.co.jp/blog/information-technology/golang-introduction-rest-api)
 
 [echo.go](./echo/echo.go)
 
