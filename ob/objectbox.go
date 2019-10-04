@@ -8,7 +8,7 @@ import (
     "github.com/objectbox/objectbox-go/objectbox"
 )
 
-func initObjectBox() *objectbox.ObjectBox {
+func InitObjectBox() *objectbox.ObjectBox {
     objectBox, _ := objectbox.NewBuilder().Model(model.ObjectBoxModel()).Build()
     return objectBox
 }
@@ -21,7 +21,7 @@ func PrintVersion() {
 // AddTask データ追加
 func AddTask(text string) uint64 {
     // initialize
-    ob := initObjectBox()
+    ob := InitObjectBox()
 
     defer ob.Close()
     // テーブル呼び出し
@@ -39,7 +39,7 @@ func AddTask(text string) uint64 {
 // UpdateTask データ更新
 func UpdateTask(id uint64, updateText string) {
     // initialize
-    ob := initObjectBox()
+    ob := InitObjectBox()
 
     defer ob.Close()
 
@@ -54,7 +54,7 @@ func UpdateTask(id uint64, updateText string) {
 // ReadTaskAll 全件出力
 func ReadTaskAll() {
     // initialize
-    ob := initObjectBox()
+    ob := InitObjectBox()
 
     defer ob.Close()
 
@@ -74,7 +74,7 @@ func ReadTaskAll() {
 // RemoveTask レコード削除
 func RemoveTask(id uint64) {
     // initialize
-    ob := initObjectBox()
+    ob := InitObjectBox()
 
     defer ob.Close()
 
@@ -97,7 +97,7 @@ func RemoveTask(id uint64) {
 // QueryTask 検索
 func QueryTask(keyword string) {
     // initialize
-    ob := initObjectBox()
+    ob := InitObjectBox()
 
     defer ob.Close()
     // テーブル呼び出し
@@ -116,7 +116,7 @@ func QueryTask(keyword string) {
 // RemoveAll 全件削除
 func RemoveAll() {
     // initialize
-    ob := initObjectBox()
+    ob := InitObjectBox()
 
     defer ob.Close()
     // テーブル呼び出し

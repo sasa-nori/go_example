@@ -113,9 +113,9 @@ func find(c echo.Context) error {
     }
 
     // Name,DescriptionでのLIKE検索
-    result := findKeyword(box, keyword)
-    if len(result) == 0 {
-        return c.JSON(http.StatusNotFound, "item is not found")
+    result, error := findKeyword(box, keyword)
+    if error != nil {
+        return error
     }
 
     return c.JSON(http.StatusOK, result)
@@ -129,18 +129,9 @@ func findDescription(box *model.FavoriteBox, description string) ([]*model.Favor
     return box.Query(model.Favorite_.Description.Contains(description, true)).Find()
 }
 
-func findKeyword(box *model.FavoriteBox, keyword string) []*model.Favorite {
-    var result = make([]*model.Favorite, 0)
-    findName, _ := findName(box, keyword)
-    for _, item := range findName {
-        result = append(result, item)
-    }
-    findDescription, _ := findDescription(box, keyword)
-    for _, item := range findDescription {
-        result = append(result, item)
-    }
-
-    return result
+func findKeyword(box *model.FavoriteBox, keyword string) ([]*model.Favorite, error) {
+    return box.Query(objectbox.Any(model.Favorite_.Name.Contains(keyword, true),
+        model.Favorite_.Description.Contains(keyword, true))).Find()
 }
 
 func addFavorite(c echo.Context) error {
@@ -180,17 +171,12 @@ type AddFavoriteRequest struct {
     Description string `json:"description"`
 }
 
-func initObjectBox() *objectbox.ObjectBox {
-    objectBox, _ := objectbox.NewBuilder().Model(model.ObjectBoxModel()).Build()
-    return objectBox
-}
-
 func getBox() *model.FavoriteBox {
-    return model.BoxForFavorite(initObjectBox())
+    return model.BoxForFavorite(InitObjectBox())
 }
 
 // RemoveAll 全件削除
-func RemoveAll() {
+func removeAll() {
     // テーブル呼び出し
     box := getBox()
 
