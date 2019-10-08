@@ -16,7 +16,7 @@ func RunObjectBoxApi() {
     e.POST("/api/add", addFavorite)
     e.POST("/api/find", find)
     e.POST("/api/update", update)
-    e.POST("/api/get/all", getAll)
+    e.GET("/api/get/all", getAll)
     e.POST("/api/remove", remove)
     e.Logger.Fatal(e.Start(":3022"))
 }
