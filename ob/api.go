@@ -17,7 +17,7 @@ func RunObjectBoxApi() {
     e.POST("/update", update)
     e.POST("/get/all", getAll)
     e.POST("remove", remove)
-    e.Logger.Fatal(e.Start(":1323"))
+    e.Logger.Fatal(e.Start(":3022"))
 }
 
 func remove(c echo.Context) error {
