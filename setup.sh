@@ -13,6 +13,11 @@ goenv rehash
 echo export GOPATH='$HOME/development/go' >> ~/.bash_profile
 echo export PATH='$PATH:$GOPATH/bin' >> ~/.bash_profile
 echo export PATH='$PATH:/usr/local/go/bin' >> ~/.bash_profile
+
+cd $(go env GOROOT)
+cd src   
+GOOS=linux GOARCH=amd64 ./make.bash
+
 source ~/.bash_profile
 cd $GOPATH/src
 git clone https://github.com/noriyuki-sasagawa/go_example.git
