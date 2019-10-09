@@ -1,10 +1,10 @@
 package main
 
 import (
-    "go_example/ob"
+    "go_example/hello"
     
 )
 
 func main() {
-    ob.RunObjectBoxApi()
+    hello.SayHello()
 }
