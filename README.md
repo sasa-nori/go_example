@@ -58,18 +58,27 @@
 
 [search.go](./search/search.go)
 
-### 8回目
+### [【第8回】Go言語（Golang）入門～環境見直し編～](https://rightcode.co.jp/blog/information-technology/golang-introduction-environment-reconstruction)
 
 [setup.sh](./setup.sh)
 
-### 9回目
+### [【第9回】Go言語（Golang）入門～ObjectBox導入編～](https://rightcode.co.jp/blog/information-technology/golang-introduction-objectbox)
 
 [objectbox.go](./ob/objectbox.go)
 
-### 10回目
+### [【第10回】Go言語（Golang）入門～ObjectBox活用編～](https://rightcode.co.jp/blog/information-technology/golang-introduction-objectbox-utilization)
 
 [api.go](./ob/api.go)
 
-### 11回目
+### [【第11回】Go言語（Golang）入門～FCM送信編～](https://rightcode.co.jp/blog/information-technology/golang-introduction-fcm-send)
 
 [message.go](./fcm/message.go)
+
+### 12回目
+
+[mysql.go](./mysql/mysql.go)
+
+
+### 13回目
+
+[mysql.go](./mysql/mysql.go)
